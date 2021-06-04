@@ -1,0 +1,747 @@
+/* ------- general styling -------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    padding: 0px;
+    margin:  0px;
+    width: 100%;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+hr{
+    width: 7%;
+}
+
+
+/* ------- navigation bar ------- */
+
+.top-menu-bar{
+    background-color: #00c1c1;
+    overflow: hidden;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.top-menubar-cont{
+    margin-right: 30px;
+}
+
+.top-menubar-cont ul{
+    display: flex;
+    float: right;
+}
+
+.top-menubar-cont li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.top-menubar-cont li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.top-menubar-cont li a:hover{
+    color: #3a3a3a;
+}
+
+.top-menubar-cont li a.ctive{
+    color: #3a3a3a;
+}
+
+/* ------- Landing Page Image ------- */
+
+.image-container{
+    background: linear-gradient( rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4) ), url('../images/land_screen.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.4;
+}
+
+.image-container h1{
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.image-container p{
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#name-title{
+    animation: animate 4s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+/* ------- About section ------- */
+
+.about-container{
+    margin: 50px 0px 80px 0px;
+    padding: 80px;
+    height: 37vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container img{
+    width: 380px;
+    height: 370px;
+    margin-right:50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.about-cont-2{ 
+    margin-top: 50px;
+    width: 60vw;
+    margin-left: 150px;
+    height: 45vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-cont-2 br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 24%;
+  }
+
+.about-cont-2 #intro{
+    font-size: 22px;
+}
+
+.about-cont-2 #mission{
+    opacity: 0.5;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.about-cont-2 #more{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.about-cont-2 .btn-resume{
+    border: #00c1c1 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    text-decoration: none;
+    color:#00c1c1;
+    font-weight: bold;
+}
+
+.about-cont-2 .btn-resume:hover{
+    background-color: #00c1c1;
+    color: white;
+    cursor: pointer;
+}
+
+/* ------- Skill section ------- */
+
+.skills-container{
+    padding: 50px;
+    margin: 10px 0px 0px 0px;
+    height: 80vh;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+.skills-container h2{
+    margin-top: 50px;
+}
+
+.skills-container hr{
+    margin-bottom: 40px;
+}
+
+.skills-container h3{
+    font-size: 22px;
+}
+#skills-1-prof{
+    width: 40%;
+    margin-left: 200px;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #3a3a3a;
+    opacity: 0.5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#skills-2-tech{
+    width: 40%;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #3a3a3a;
+    opacity: 0.8;
+    color: #ffffff;
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.skills-image-container{
+    padding: 50px;
+    height: 29vw;
+    text-align: center;
+    background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(../images/skills_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills-image-container img{
+    width: 230px;
+    height: 190px;
+}
+
+/* ------- Projects section ------- */
+
+.projects-container{
+    background-color: #f8f8f8;
+    margin: 0px 0px 50px 0px;
+    padding: 100px;
+}
+
+.card_deck{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.card_deck .card_1{
+    box-shadow: 0px 0px 10px #00c1c1; 
+    margin-top: 10px;
+}
+
+.card_deck .card_1 img{
+    height: 200px;
+    opacity: 250ms linear;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_deck .card_1 .txt{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: .3em;
+    color: #000;
+}
+
+.card_deck .card_1:hover{
+    opacity: .55;
+}
+
+/* ------- Contact section ------- */
+
+.contacts-container{
+    background-color: #f8f8f8;
+    padding: 100px;
+    margin: 70px 0px 50px 0px;
+    text-align: center;
+}
+
+.contacts-container hr{
+    margin-bottom: 30px;
+}
+
+.contact-form{
+    margin-top: 40px;
+}
+
+.contact-form input{
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 12px;
+    width: 431px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.contact-form textarea{
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 5px;
+    padding-left: 12px;
+}
+
+
+.contact-form textarea,::-webkit-input-placeholder{
+    font-size: 18px;
+}
+
+.contact-form button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 455px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00c1c1;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: #3a3a3a;
+}
+
+.widgets{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.widgets i{
+    font-size: 80px;
+    color: #00c1c1;
+}
+
+.widgets p{
+    font-size: 20px;
+}
+
+.widgets br {
+    content: "";
+    margin: 40px;
+    display: block;
+    font-size: 24%;
+}
+
+.contacts-container-2{
+    text-align: center;
+    padding: 80px;
+}
+
+.contacts-container-2 .widgets-2{
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contacts-container-2 .widgets-2 .social-media ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 45px;
+}
+
+.contacts-container-2 .widgets-2 .social-media li{
+    margin-top: 15px;
+    list-style-type: none;
+    margin: 0px 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #00c1c1;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.contacts-container-2 .widgets-2 .social-media a{
+   color: #ffffff;
+   font-size: 25px;
+}
+
+.contacts-container-2 .social-media li:hover{
+    background-color: #3a3a3a;
+    cursor: pointer;
+}
+
+/* ------- Footer ------- */
+
+footer{
+    background: #00c1c1;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+/* Media Queries */
+
+/* Mobile view */
+@media screen and (max-width:600px){
+    /* General styling */
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 19px;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Navigation bar */
+    .top-menubar-cont{
+        margin-right: 0;
+    }
+    .top-menubar-cont li{
+        margin-right: 2px;
+    }
+    .top-menubar-cont li a{
+        font-size: 11px;
+    }
+    /* Landing Page */
+    .image-container h1{
+        font-size: 38px;
+    }
+    .image-container p{
+        font-size: 18px;
+    }
+
+    /* About Section */
+    .about-container{
+        height: 105vh;
+        margin-bottom: 0;
+    }
+    .about-cont-2{
+        display: block;
+        margin-left: -40px;
+        margin-top: 30px;
+    }
+    .about-cont-2 img{
+        width: 180px;
+        height: 180px;
+        margin-left: 0;
+    }
+    .about-cont-2 #intro{
+        font-size: 17px;
+    }
+    .about-cont-2 #mission{
+        font-size: 15px;
+    }
+    .about-cont-2 #more{
+        font-size: 13px;
+    }
+    .about-cont-2 .btn-resume{
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    /* Skills section */
+    .skills-container{
+        height: 105vh;
+        position: static !important;
+    }
+    .skills-container h3{
+        font-size: 19px;
+    }
+    #skills-1-prof{
+        margin-left: -5px;
+        font-size: 15px;
+        width: 90%;
+    }
+    #skills-2-tech{
+        margin-left: -5px;
+        margin-top: 10px;
+        font-size: 15px;
+        position: static;
+        width: 90%;
+    }
+   
+    .skills-image-container img{
+        width: 60px;
+        height: 40px;
+    }
+
+    /* project section */
+    .card_deck{
+        display: block;
+    }
+
+    .card_deck .card_1 img{
+        height: 100px;
+        max-width: 100%;
+    }
+
+    .card_deck .card_1 .txt{
+        font-size: .6em;
+    }
+
+    /* Contact Section */
+    .contacts-container{
+        padding: 50px;
+    }
+    .contacts-container p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .contact-form input{
+        padding: 8px;
+        font-size: 15px;
+        width: 240px;
+    }
+    .contact-form input, ::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+    .contact-form textarea{
+        font-size: 15px;
+        width: 241px;
+    }
+    .contact-form button{
+        width: 260px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    .widgets{
+        display: block;
+        margin-top: -30p        x;
+    }
+    .widgets i{
+        font-size: 50px;
+    }
+    .widgets p{
+        font-size: 15px;
+    }
+    .widgets br {
+        content: "";
+        margin: 26px;
+        display: block;
+        font-size: 24%;
+    }
+    .widgets-2 h3{
+        font-size: 15px;
+    }
+    .contacts-container-2 .widgets-2 .social-media ul{
+        margin-right: 45px;
+    }
+    .contacts-container-2 .widgets-2 .social-media li{
+        margin: 0px 5px;
+        line-height: 37px;
+        height: 40px;
+    }
+    .contacts-container-2 .social-media .fa{
+        width: 40px;
+        font-size: 18px;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 11px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 601px) and (max-width: 1024px){
+    /* General styling */
+    h2{
+        font-size: 29px;
+    }
+    h3{
+        font-size: 21px;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Navigation bar */
+    .top-menubar-cont li{
+        margin-right: 5px;
+    }
+    .top-menubar-cont li a{
+        font-size: 16px;
+    }
+    /* Landing Page */
+    .image-container h1{
+        font-size: 55px;
+    }
+    .image-container p{
+        font-size: 23px;
+    }
+
+    /* About Section */
+    .about-container{
+        height: 80vh;
+        margin-bottom: 0;
+    }
+    .about-cont-2{
+        display: block;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    .about-cont-2 img{
+        width: 230px;
+        height: 230px;
+        margin-left: 0;
+    }
+    .about-cont-2 #intro{
+        font-size: 22px;
+    }
+    .about-cont-2 #mission{
+        font-size: 20px;
+    }
+    .about-cont-2 #more{
+        font-size: 18px;
+    }
+    .about-cont-2 .btn-resume{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* Skills section */
+    .skills-container{
+        height: 70vh;
+        position: static !important;
+    }
+    .skills-container h3{
+        font-size: 21px;
+    }
+    #skills-1-prof{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 17px;
+        width: 85%;
+    }
+    #skills-2-tech{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        font-size: 17px;
+        position: static;
+        width: 85%;
+    }
+    .skills-image-container img{
+        width: 100px;
+        height: 80px;
+    }
+
+    /* project section */
+    .card_deck{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1em;
+    }
+
+    .card_deck .card_1 img{
+        height: 150px;
+        max-width: 100%;
+    }
+
+    .card_deck .card_1 .txt{
+        font-size: .8em;
+    }
+
+    /* Contact Section */
+    .contacts-container p{
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .contact-form input{
+        padding: 9px;
+        font-size: 17px;
+        width: 360px;
+    }
+    .contact-form input, ::-webkit-input-placeholder{
+        font-size: 17px;
+    }
+    .contact-form textarea{
+        font-size: 17px;
+        width: 361px;
+    }
+    .contact-form button{
+        width: 378px;
+        padding: 9px;
+        font-size: 17px;
+    }
+    .widgets i{
+        font-size: 60px;
+    }
+    .widgets p{
+        font-size: 17px;
+    }
+    .widgets br {
+        content: "";
+        margin: 26px;
+        display: block;
+        font-size: 24%;
+    }
+    .widgets-2 h3{
+        font-size: 17px;
+    }
+    .contacts-container-2 .widgets-2 .social-media ul{
+        margin-right: 45px;
+    }
+    .contacts-container-2 .widgets-2 .social-media li{
+        margin: 0px 10px;
+        line-height: px;
+        height: 50px;
+    }
+    .contacts-container-2 .social-media .fa{
+        width: 50px;
+        font-size: 24px;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 14px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+}
+

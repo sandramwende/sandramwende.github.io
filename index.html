@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Sandra</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/code.png" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Navigation bar-->
+
+        <nav class="top-menu-bar">
+            <div class="top-menubar-cont">
+                <section id="home">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                </section>
+            </div>
+        </nav>
+
+        <!-- Landing page image-->
+        <div class="image-container">
+            <span id="name-title">
+                <h1>Sandra Mwende</h1>
+                <p>Software developer</p>
+            </span>
+        </div>
+
+        <!-- About section-->
+
+        <section id="about">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <hr>
+                <div class="about-cont-2" data-aos="fade-left">
+                    <span class="myImage">
+                        <img src="images/sandra.JPG" alt="sandra">
+                    </span>
+                    <span class="about-text">
+                        <p id="intro">Fueled by the passion of evolving technology she works with an aim of making it
+                            work with your lifestyle.
+                        </p><br>
+                        <p id="mission">
+                            Mission: Make it work, make it right, make it fast.
+                        </p>
+                        <br>
+                        <p id="more">
+                            She hungers for knowledge and has the determination to turn information into action. Makes good
+                            of available resouces to counter problematic situations . Meanwhile she brings a lot of
+                            creativity and innovation when it comes to development. Since perfection is beyond human
+                            understanding she works towards growth and actual results.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1j6JVETWIUABuYI6PLI-LOBYHehup0oq6/view?usp=sharing" target="_blank" class="btn-resume">View Resume</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section-->
+
+        <section id="skills">
+            <div class="skills-container">
+                <h2>Skills</h2>
+                <hr>
+                <div id="skills-1-prof">
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li>An active listener</li>
+                        <li>High interpersonal skills</li>
+                        <li>Work without supervision</li>
+                        <li>Quick learner</li>
+                        <li>Practise time management</li>
+                        <li>Take responsibility for my own actions</li>
+                    </ul>
+                </div>
+                <div id="skills-2-tech">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Front-end web with HTML5, CSS3, Bootstrap and Javascript</li>
+                        <li>Frontend web with php</li>
+                        <li>Python programming</li>
+                        <li>Git, Github</li>
+                        <li>Android development in Java</li>
+                        <li>Databases with MySQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-image-container">
+                
+                        <img src="images/android.png" alt="android" data-aos="fade-down">
+                        <img src="images/html.png" alt="html5" data-aos="fade-down" data-aos-delay="500">
+                        <img src="images/css.png" alt="css3" data-aos="fade-down" data-aos-delay="1000">
+                        <img src="images/java.png" alt="java" data-aos="fade-down" data-aos-delay="1500">
+                        <img src="images/js.png" alt="javascript" data-aos="fade-down" data-aos-delay="2000">
+            </div>
+        </section>
+
+        <!-- Projects section-->
+
+        <section id="projects">
+            <div class="projects-container">
+                <h2>Projects</h2>
+                <hr>
+                <div class="card_deck">
+                    <!-- <a href="http://mvumo.centre4resource.com/"> -->
+                        <div class="card_1">
+                            <img src="images/log.png" alt="">
+                            <p class="txt">Dairy supply chain system</p>
+                        </div>
+                    </a>
+                    
+                   <!--  <a href="http://gatesystem.rongaiws.com/gaspercentportal/login.php" target="_blank"> -->
+                        <div class="card_1">
+                            <img src="images/dash.png" alt="">
+                            <p class="txt">Dairy supply chain system</p>
+                        </div>
+                    </a>
+
+                    <!-- <a href="http://gatesystem.rongaiws.com/gaspercentportal/login.php" target="_blank"> -->
+                       <!--  <div class="card_1">
+                            <img src="images/repo.png" alt="">
+                             <p class="txt">Gas Perecent web portal</p> -->
+                        <!-- </div>
+                    </a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section-->
+
+        <section id="contacts">
+            <div class="contacts-container">
+                <h2>Contacts</h2>
+                <hr>
+                <p>For any questions or you just feel like saying 'hello' please leave a message and i'll get in touch
+                    with
+                    you.</p>
+
+                <form class="contact-form" id="contactForm">
+                    
+                        <input type="text" placeholder="Your name" id="name" name="name" required><br>
+       
+                        <input type="email" placeholder="Your email" id="email" name="email" required><br>
+                        
+                        <input type="text" placeholder="Subject" id="subject" name="subject" required><br>
+                       
+                        <textarea name="message" placeholder="Message" id="message" name="message" cols="42" rows="10" required></textarea><br>
+               
+                    <button type="submit" id="buSubmit">Send Message</button>
+                </form>
+            </div>
+            <div class="contacts-container-2">
+                <div class="widgets">
+                    <div class="call-widget" data-aos="fade-right">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h3>Call</h3><br>
+                        <p>+254 715 671 853</p>
+                    </div>
+
+                     <div class="email-widget"  data-aos="fade-down">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <h3>Email</h3><br>
+                        <p>sandramwende777@gmail.com</p>
+                     </div>
+                     
+                     <div class="location-widget"  data-aos="fade-left">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h3>Location</h3><br>
+                        <p>Nairobi, Kenya</p>
+                     </div>
+                </div>
+                <div class="widgets-2">
+                    <h3>My social networks</h3>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="https://web.facebook.com/mr.gitonga/about" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/gitonga_is_me" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/sandramwende" target="_blank">
+                                <i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/ian-gitonga-4b06341b3/" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+
+        <footer>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Sandra Mwende</p>
+        </footer>
+    </div>
+
+    <!-- Js styling -->
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 280,
+        duration: 1000
+    });
+  </script>
+  <!-- End -->
+</body>
+
+</html>
